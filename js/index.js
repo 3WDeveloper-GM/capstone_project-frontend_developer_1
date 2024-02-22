@@ -19,7 +19,7 @@ function blur() {
 
 
 const element = document.querySelector("#hello")
-const text = "Hello World"
+const text = "Hi there!"
 
 function textTyping(element, text, i = 0) {
    if (i === 0) {
