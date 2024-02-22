@@ -33,6 +33,14 @@
 .hello-there {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
  }
+
+.more {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: white;
+}

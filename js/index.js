@@ -1,3 +1,7 @@
+// while (document.readyState !== 'complete') {
+
+// }
+
 window.addEventListener("scroll", blur)
 
 function blur() {
