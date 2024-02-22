@@ -2,6 +2,7 @@
 
 // }
 
+
 window.addEventListener("scroll", blur)
 
 function blur() {
