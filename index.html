@@ -13,29 +13,36 @@
     />
   </head>
   <body style="margin: 0">
-    <div class="basic-grid" id="background">
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
+    <div class="background-grid" id = "background">
       <i>
-        <h1>
-          <span class="hello-there" id="hello"></span>
-        </h1>
+      <div class="basic-grid">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i>
+          <h1>
+            <span class="hello-there" id="hello"></span>
+            <span class="hello-there blink-element"></span>
+          </h1>
+        </i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
       </i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
       <i>
-        <h2 class="more">
-          <span>
-            More
-          </span>
-        </h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; align-items:center">
+          <i></i>
+          <i>
+            <h3 class="hello-there blink-element">
+              more
+            </h3>
+          </i>
+          <i></i>
+        </div>
       </i>
-      <i></i>
     </div>
     <div class="placeholder"></div>
     <script src="./js/index.js"></script>

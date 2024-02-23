@@ -1,5 +1,5 @@
 #background {
-  background-image: url("img/alex-mccarthy-TwBTj-JhaSk-unsplash_optimized.jpeg");
+  background-image: url("img/jose-castillo-ZdPRzJZzpjI-unsplash_optimized.jpg");
   background-position: 50%;
   height: 100vh;
   width: 100%;
@@ -20,9 +20,15 @@
 
 .basic-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr 1fr;
+  grid-template-rows: 7fr 1fr 3fr;
   align-items: center;
+}
+
+.background-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7fr 1fr;
 }
 
 .basic-grid-item {
@@ -35,6 +41,8 @@
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  color: white;
+  text-transform: uppercase;
  }
 
 .more {
@@ -43,4 +51,13 @@
   font-weight: 200;
   font-style: normal;
   color: white;
+}
+
+.blink-element {
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
 }
