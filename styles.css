@@ -20,9 +20,15 @@
 
 .basic-grid {
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr;
-  grid-template-rows: 7fr 1fr 3fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 500px 100px 100px;
   align-items: center;
+}
+
+@media (min-width: 600px) {
+  .basic-grid {
+    grid-template-columns: 4fr 1fr 1fr;
+  }
 }
 
 .background-grid {
@@ -35,7 +41,6 @@
   background-color: transparent;
 }
 
-
 .hello-there {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
@@ -43,7 +48,7 @@
   font-style: normal;
   color: white;
   text-transform: uppercase;
- }
+}
 
 .more {
   font-family: "Roboto Slab", serif;
@@ -58,6 +63,11 @@
 }
 
 @keyframes blink {
-  0%, 100% {opacity: 1;}
-  50% {opacity: 0;}
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
