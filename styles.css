@@ -6,8 +6,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  opacity: 1;
-  filter: blur(0px);
+  opacity: 0.1;
+  filter: blur(20px);
   transition: all 100ms;
   text-align: center;
   justify-content: space-between;
