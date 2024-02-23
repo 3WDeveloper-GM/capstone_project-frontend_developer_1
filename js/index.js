@@ -15,6 +15,7 @@ function textTyping(element, text, i = 0) {
 function blur() {
    var background = document.getElementById('background')
    var scrollHeight = window.scrollY
+   var maximumBlur = 9
 
    var scrollMax = background.clientHeight
 
@@ -24,7 +25,9 @@ function blur() {
 
    background.style.opacity = opacity;
 
-   var blur = Math.floor(10 * (scrollHeight / scrollMax))
+   var blur = (scrollHeight < scrollMax)
+      ? Math.floor(10 * (scrollHeight / scrollMax))
+      : maximumBlur
 
    background.style.filter = `blur(${blur}px)`
 }
@@ -45,7 +48,7 @@ function unblur(currentBlur, currentOpacity, i = 0) {
       splash.style.opacity = newOpacity
       splash.style.filter = `blur(${newBlur}px)`
 
-      setTimeout(() => unblur(newBlur, newOpacity, i + 1), 50)
+      setTimeout(() => unblur(newBlur, newOpacity, i + 1), 25)
    }
 }
 
