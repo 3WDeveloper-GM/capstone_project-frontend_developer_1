@@ -1,0 +1,15 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "just a website",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "test": "echo \"Error test not spoecified\" && exit 1"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
